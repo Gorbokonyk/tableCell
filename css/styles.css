@@ -11,31 +11,47 @@
     clear: left;
     text-align: center;
     font-size: 2.5em;
+    width: auto;
+    height: auto;
 }
-
-/* layout */
-#main-wrap {
-    /* overflow to handle inner floating block */
-    overflow: hidden;
-    
-}
-
-#sidebar {
-    float: left;
-    width: 10%;
-    
-}
-
-#content-wrap {
-    float: right;
-    width: 90%;
-    
-}   
 
 div.container {
-    width: 100%;
+    width: auto;
+    height: auto;
     border: 1px solid gray;
+    position:relative; 
+    display:block;
 }
+
+
+/* layout */
+#sidebar-wrap {
+    float: left;
+    position: relative;
+    width:10%;
+    
+}   
+#main-wrap {
+    /* overflow to handle inner floating block */
+    position: relative;
+    float: left;
+    width: 90%;
+
+    
+
+    
+}
+
+
+
+#sidebar {
+    
+    
+}
+
+
+
+
 
   
   
@@ -45,8 +61,8 @@ div.container {
 #table-1 {
   display: table;
   border-spacing: 5px;
-  width: 1300px;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 100%;
 }
 
 #Box1, #Box2, #Box3 {
@@ -71,8 +87,8 @@ div.container {
 #table-2 {
   display: table;
   border-spacing: 5px;
-  width: 1300px;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 100%;
   margin-top: -5px;
 }
        
@@ -80,6 +96,7 @@ div.container {
   display: table-cell;
   height: 195px;
   background: #c3d69b;
+ 
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -87,8 +104,8 @@ div.container {
 #table-3 {
   display: table;
   border-spacing: 5px;
-  width: 1300px;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 100%;
   height: 195px;
   margin-top: -5px;
 }
@@ -124,6 +141,7 @@ p {
   line-height: 1.2em;
   text-align: justify;
   padding: 5px 10px 5px;
+
 }
 
 
@@ -182,9 +200,10 @@ p {
 
 /*:::::::::::::::::::::SIDE MENU:::::::::::::::::::::::::::*/
 nav{
-  height: 585px;
+  height: 580px;
+  width: 100%;
   background:#AC6C82;
-  /*position:fixed;*/
+  
   top:0;
   bottom:0;
   left:0;
