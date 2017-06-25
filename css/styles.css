@@ -1,0 +1,223 @@
+/* sizes */
+#main-wrap > div { min-height: 450px; }
+
+
+#header,
+#footer {
+    min-height: 40px;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+    
+}
+
+#sidebar {
+    float: left;
+    width: 10%;
+    
+}
+
+#content-wrap {
+    float: right;
+    width: 90%;
+    
+}   
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+  
+  
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::: TABLE BOX SIZING AND STYLE ::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#table-1 {
+  display: table;
+  border-spacing: 5px;
+  width: 1300px;
+  max-width: 1300px;
+}
+
+#Box1, #Box2, #Box3 {
+  display: table-cell;
+  height: 195px;
+}
+
+#Box1 {
+  background: #fac08f;
+}
+
+#Box2 {
+  background: #92cddc;
+}
+         
+#Box3 {
+  background: #b2a2c7;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#table-2 {
+  display: table;
+  border-spacing: 5px;
+  width: 1300px;
+  max-width: 1300px;
+  margin-top: -5px;
+}
+       
+#Box4 {
+  display: table-cell;
+  height: 195px;
+  background: #c3d69b;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#table-3 {
+  display: table;
+  border-spacing: 5px;
+  width: 1300px;
+  max-width: 1300px;
+  height: 195px;
+  margin-top: -5px;
+}
+
+#Box5, #Box6 {
+  display: table-cell;
+  height: 195px;
+}
+         
+#Box5 {
+  background: #d99694;
+}
+
+#Box6 {
+  background: #938953;
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+h2 {
+  font-family: 'Ruthie', cursive;
+  font-size: 2em;
+  padding: 10px 10px 5px;
+  color: #353535;
+}           
+
+p {
+  font-family: 'Flamenco', cursive;
+  font-size: 0.875em;
+  color: #000000;
+  line-height: 1.2em;
+  text-align: justify;
+  padding: 5px 10px 5px;
+}
+
+
+
+@media screen and (max-width: 920px) and (min-width: 300px) and (min-width: 200px) {
+  body {
+    font-size: 90%;
+  }
+
+  h1 {
+    display: none;
+    visibility: hidden;
+  }
+
+  main {
+    width: auto;
+    margin: 10px auto;
+  }
+
+  /*aside {
+    width: 65%;
+    height: 795px;
+    margin: 5px auto;
+    border: 4px solid #f2f2f2;
+  }*/
+
+  #table-1 {
+    border-spacing: 5px;
+    width: 100%;
+    height: 125px;
+  }
+
+  #table-2 {
+    border-spacing: 5px;
+    width: 100%;
+    height: 125px;
+    margin-top: -5px;
+  }
+
+  #table-3 {
+    width: 100%;
+    height: 125px;
+  }
+
+  #Box1, #Box2, #Box3, #Box4, #Box5, #Box6 {
+    display: table-row;
+    height: 125px;
+  }
+
+  nav {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+/*:::::::::::::::::::::SIDE MENU:::::::::::::::::::::::::::*/
+nav{
+  height: 585px;
+  background:#AC6C82;
+  /*position:fixed;*/
+  top:0;
+  bottom:0;
+  left:0;
+  padding-top:1em;
+  margin: 5px 0 5px 0;
+}
+
+
+ul {
+    margin:0;
+  padding:0;
+  position:absolute;
+}
+
+li{
+  padding-left:1em;
+/*  position:relative;*/
+}
+
+a {
+    display:block;
+    padding:0 0.5em;
+    box-sizing: border-box;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:3;
+    text-decoration:none;  
+    position:relative;
+}
+
+a:hover{
+      color:#455C7B;
+    }
+    
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::*/
